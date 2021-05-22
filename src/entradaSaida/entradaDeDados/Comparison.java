@@ -17,22 +17,22 @@ public class Comparison {
 		number2 = input.nextInt();
 
 		if (number1 == number2)
-			System.out.printf("%d é igual a %d\n", number1, number2);
+			System.out.printf("%d ï¿½ igual a %d\n", number1, number2);
 
 		if (number1 != number2)
-			System.out.printf("%d é diferente a %d\n", number1, number2);
+			System.out.printf("%d ï¿½ diferente a %d\n", number1, number2);
 
 		if (number1 < number2)
-			System.out.printf("%d é menor a %d\n", number1, number2);
+			System.out.printf("%d ï¿½ menor a %d\n", number1, number2);
 
 		if (number1 > number2)
-			System.out.printf("%d é maior a %d\n", number1, number2);
+			System.out.printf("%d ï¿½ maior a %d\n", number1, number2);
 
 		if (number1 <= number2)
-			System.out.printf("%d é menor ou igual a %d\n", number1, number2);
+			System.out.printf("%d ï¿½ menor ou igual a %d\n", number1, number2);
 
 		if (number1 >= number2)
-			System.out.printf("%d é maior ou igual a %d\n", number1, number2);
+			System.out.printf("%d ï¿½ maior ou igual a %d\n", number1, number2);
 
 	}
 }

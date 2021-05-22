@@ -4,7 +4,7 @@ public class Account {
 	private String name;
 	private double balance;
 	
-	// Declaração do construtor da classe
+	// DeclaraÃ§Ã£o do construtor da classe
 	public Account(String name, double balance) {
 		this.name = name;
 		

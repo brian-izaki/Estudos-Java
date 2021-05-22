@@ -1,9 +1,9 @@
 # Entrada de dados
 
-Aqui será visto o uso de variáveis e um cálculo de soma que o usuário digita no terminal 2 numeros
+Aqui serÃ¡ visto o uso de variÃ¡veis e um cÃ¡lculo de soma que o usuÃ¡rio digita no terminal 2 numeros
 
-- **Declaração de variáveis**
-  - No Java **deve** declarar a variável com o tipo e nome dela.
+- **DeclaraÃ§Ã£o de variÃ¡veis**
+  - No Java **deve** declarar a variÃ¡vel com o tipo e nome dela.
     ```Java
     String nome = "nome da variavel";
     int numero = 23;
@@ -21,20 +21,20 @@ Aqui será visto o uso de variáveis e um cálculo de soma que o usuário digita no 
       - float
       - double
 
-- **Operadores aritméticos**
-  - Quando é feito uma divisão de valores inteiros, ele não irá mostrar restos nem arredondar os valores. ex: 7 / 4 = 1.75, mas iria ser armazenado 1 na variável.
+- **Operadores aritmÃ©ticos**
+  - Quando Ã© feito uma divisÃ£o de valores inteiros, ele nÃ£o irÃ¡ mostrar restos nem arredondar os valores. ex: 7 / 4 = 1.75, mas iria ser armazenado 1 na variÃ¡vel.
 
-- **Tomada decisão (condições)**, retornam booleanos
+- **Tomada decisÃ£o (condiÃ§Ãµes)**, retornam booleanos
   - operadores de igualdade:
-    - `"a" == "a"`: os valores são iguais?
-    - `"a" != "a"`: os valores são diferentes?
+    - `"a" == "a"`: os valores sÃ£o iguais?
+    - `"a" != "a"`: os valores sÃ£o diferentes?
   - operadores relacioais:
-    - `>`: é maior que...
-    - `<`: é menor que...
-    - `>=`: é maior ou igual que...
-    - `<=`: é menor ou igual que...
+    - `>`: Ã© maior que...
+    - `<`: Ã© menor que...
+    - `>=`: Ã© maior ou igual que...
+    - `<=`: Ã© menor ou igual que...
     
-- Anotações:
-  - O objeto `Scanner` está sendo utilizado para poder haver interação do usuario com o terminal (nesse caso adicionar numeros).
-    - os números estão sendo salvos na variável com o método `.nextInt()`. (existem outros "next" que capturam outros tipos dedados)
+- AnotaÃ§Ãµes:
+  - O objeto `Scanner` estÃ¡ sendo utilizado para poder haver interaÃ§Ã£o do usuario com o terminal (nesse caso adicionar numeros).
+    - os nÃºmeros estÃ£o sendo salvos na variÃ¡vel com o mÃ©todo `.nextInt()`. (existem outros "next" que capturam outros tipos dedados)
     

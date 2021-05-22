@@ -12,7 +12,7 @@ public class AccountTest {
 		displayAccount(myAccount2);		
 		
 		Scanner input = new Scanner(System.in);
-		System.out.print("\nDigite o valor que irá depositar na conta 1: ");
+		System.out.print("\nDigite o valor que irÃ¡ depositar na conta 1: ");
 		double depositAmount = input.nextDouble();
 		
 		myAccount1.deposit(depositAmount);
@@ -20,7 +20,7 @@ public class AccountTest {
 		displayAccount(myAccount1);
 		displayAccount(myAccount2);
 		
-		System.out.print("\nDigite o valor que irá depositar na conta 2: ");
+		System.out.print("\nDigite o valor que irÃ¡ depositar na conta 2: ");
 		depositAmount = input.nextDouble();
 		myAccount2.deposit(depositAmount);
 		
@@ -29,7 +29,7 @@ public class AccountTest {
 		
 		
 		//System.out.print("Digite o nome da nova conta: ");
-		//String theName = input.nextLine(); // lê uma linha de texto
+		//String theName = input.nextLine(); // lÃª uma linha de texto
 		//myAccount.setName(theName);
 		
 		//System.out.printf("\nNome na nova conta: %s\n", myAccount.getName());
