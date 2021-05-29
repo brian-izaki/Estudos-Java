@@ -5,9 +5,12 @@
 O Java possuí três tipos de instruções de controle (instrução de sequência, instruções de seleção e instruções de
 repetição)
 
+- **Instrução em sequência**
+    - são os códigos que são executados linha em linha (uma em sequência outra).
+
 - **Instruções de seleção**
-    - `if`
-    - `if...else`
+    - `if` - (ver dir student)
+    - `if...else` - (ver dir student)
         - pode ser feito um ternário com `?:`
           ```
            condição ? true : false
@@ -15,7 +18,7 @@ repetição)
     - `switch`
 
 - **Instruções de repetição (iteração ou instrução de loop)**
-    - `while`
+    - `while` - (ver dir classAverage)
     - `do...while`
     - `for` (existem for aprimorados)
 
@@ -23,10 +26,12 @@ repetição)
 
 - Repetição controlada por contador (repetição definida)
     - é a técnica que realiza um loop e utiliza uma variável com um contador.
+    - ver student_approved.
 
 - Repetição controlada por sentinela (valor de flag) ou repetição indefinida.
     - A sentinela (flag) é quem vai parar a execução do loop. Como pode ser visto em `ClassAverageSentinela`, a nossa
       flag foi o valor `-1`.
+    - Ver ClassAverage, a flag é -1. 
 
 <br/>
 
@@ -89,5 +94,15 @@ cálculos que necessitem valores precisos o Java fornece o `BigDecimal` do `Java
         - o incremento e pré-incremento qnd estão isolados fazem a msm coisa. Apenas haverá diferença
           quando estiverem numa expressão.
           
+---
+
+- GUI para desenhar
+    - Sistema de coordenadas: 
+        - Deve-se imaginar um plano cartesiano. Na qual o canto superior esquerdo da aplicação é o ponto (0, 0).
+    - Foi extendido o JPanel para criar uma subclasse que pudesse implementar as linhas formando um X.
+      - Todo JPanel tem o método `paintComponent` (o sistema chama automaticamente). Esse método é executado sempre que 
+        houver uma manipulação no visual da aplicação.
+      - É necessário sempre passar o objeto Graphics, ele será o responsável por desenhar linhas, quadrados, etc na tela.
+    - no teste para executar, foi utilizado o JFrame para criar um quadro que permite pintar o painel feito.
 
     
