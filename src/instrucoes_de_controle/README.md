@@ -62,7 +62,32 @@ no [CERT “NUM00-J”](https://wiki.sei.cmu.edu/confluence/display/java/NUM00-J
 **Precisão dos tipos**: os tipos flutuantes `float` não representam valores precisos, o tipo `double` possui maior precisão. Para realizar 
 cálculos que necessitem valores precisos o Java fornece o `BigDecimal` do `Java.Math`. <br/>
   
+---
 
-  
+- Operadores
+    - Atribuição compostos:
+        - Servem para abreviar expressões. ex:
+            ```
+            contador = contador + 3;
+          
+            // com atribuição composta da soma
+            contador += 3;
+            ```
+            - Podem ser utilizados os outros operadores `/, *, -, %`.
+        
+    - Incremento e decremento
+        - são operadores unários para adicionar 1 ou subtrair 1 do valor de uma variável.
+            ```
+            int v1 = 1
+            v1++ // seria v1 += 1 e imprimiria 1
+            ```
+        - Deve-se prestar atenção na ordem que o unário se apresenta. Quando estiver antes da 
+          variável chama-se **pré-incremento**, ele **adiciona 1 antes dela ser utilizada**.
+            ```
+            ++v1 // imprimiria 2
+            ```
+        - o incremento e pré-incremento qnd estão isolados fazem a msm coisa. Apenas haverá diferença
+          quando estiverem numa expressão.
+          
 
-
+    
