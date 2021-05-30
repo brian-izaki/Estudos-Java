@@ -11,6 +11,11 @@ Os estudos foram feitos vendo a documentação e principalmente seguindo o livro
 
 - **EntradaSaida**: Comportamentos da saida de dados com o objeto `System.out` e entrada com `System.in`. Além de ver sobre a **declaração de variáveis** e os **tipos de dados**.
 
+
+## Anotações gerais
+- Static
+    - são métodos que não tem necessidade de instanciar uma classe para poder utilizar ele. ex: `Math.pow(2, 3)`
+
 ---
   
 ### REFERÊNCIAS

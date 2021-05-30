@@ -1,5 +1,8 @@
 # Instruções de controle
 
+> primeiro, faça código simples e correto; então, torne-o rápido e pequeno, mas apenas se necessário.
+> -Deitel
+
 ## Anotações
 
 O Java possuí três tipos de instruções de controle (instrução de sequência, instruções de seleção e instruções de
@@ -16,7 +19,24 @@ repetição)
            condição ? true : false
           ```
     - `switch`
-
+        - na declaração Switch é feito uma comparação e para cada caso dessa comparação pode ser feito algo diferente
+          ```
+           switch (nota / 10) {
+                case 9: // o 9 é um caso que se junta com o abaixo. 9 AND 10.
+                case 10:
+                    // diz tchau
+                    break;
+                case 8:
+                    // diz ola
+                    break;
+                default: 
+                    // executa qnd não os casos acima
+                    break;
+           }
+          ```
+          - os valores de cada `case` devem ser representados por: char, inteiros, Strings e valores constates (Enum) apenas; 
+        - Em outra anotação sobre polimorfismo, será apresentado forma mais legível de implementar o switch.
+        
 - **Instruções de repetição (iteração ou instrução de loop)**
     - `while` - (ver dir classAverage)
     - `do...while`
@@ -26,11 +46,13 @@ repetição)
 
 - Repetição controlada por contador (repetição definida)
     - é a técnica que realiza um loop e utiliza uma variável com um contador.
+    - Geralmente este tipo utiliza a instrução `for`.
     - ver student_approved.
 
 - Repetição controlada por sentinela (valor de flag) ou repetição indefinida.
     - A sentinela (flag) é quem vai parar a execução do loop. Como pode ser visto em `ClassAverageSentinela`, a nossa
-      flag foi o valor `-1`.
+      flag foi o valor `-1`. 
+    - Geralmente é utilizado com a instrução `while`.
     - Ver ClassAverage, a flag é -1. 
 
 <br/>
@@ -41,10 +63,13 @@ repetição)
 para evitar isto, dê uma olhada
 no [CERT “NUM00-J”](https://wiki.sei.cmu.edu/confluence/display/java/NUM00-J.+Detect+or+prevent+integer+overflow) <br/>
 
+**Precisão dos tipos**: os tipos flutuantes `float` não representam valores precisos, o tipo `double` possui maior precisão. Para realizar
+cálculos que necessitem valores precisos o Java fornece o `BigDecimal` do `Java.Math`. <br/>
+
 **Conversão explícita e implícita**: Java traz o operador unário de coerção `(tipagem)`
 
   ```Java
-    public class exemplo {
+public class exemplo {
     public void media() {
         int n1 = 1;
         int n2 = 2;
@@ -63,10 +88,46 @@ no [CERT “NUM00-J”](https://wiki.sei.cmu.edu/confluence/display/java/NUM00-J
   conversão Implícita** do tipo para ser double, isto é **conhecido como promoção**. <br/>
   _obs: a promoção ocorre nas variáveis que sejam possíveis serem convertidas pelo tipo do unário, do contrário, pode
   resultar em erros de compilação._ <br/>
-  
-**Precisão dos tipos**: os tipos flutuantes `float` não representam valores precisos, o tipo `double` possui maior precisão. Para realizar 
-cálculos que necessitem valores precisos o Java fornece o `BigDecimal` do `Java.Math`. <br/>
-  
+
+**Break e Continue**
+- **Instrução break**: além de ser utilizado no switch, ele também pode ser visto em estruturas de repetição como while e for.
+ele faz com que saia do loop imediatamente, não executando as outras iterações nem as instruções
+após ele dentro do loop.
+    ```Java
+    public class Exemplo {
+        
+        public void exemploBreak() {
+            for (int i = 0; i < 5; i++) {
+                if (i == 2)
+                    break;
+                
+                System.out.println("aparece uma vez!");
+            }
+        }
+        
+    }
+    ```
+    - no código acima, o loop será parado qnd o indice for 2.
+    - no momento que parar, ele não executa os códigos do loop seguintes nem as outras iterações.
+    
+- **Instrução continue**: dentro das instruções for e while ele pula as próximas instruções e vai 
+para a outra iteração. (diferente do break que para os dois)
+    ```Java
+    public class Exemplo {
+        
+        public void exemploContinue() {
+            for (int i = 0; i < 5; i++) {
+                if (i == 2)
+                    continue;
+                
+                System.out.println("Bazinga!");
+            }
+        }
+        
+    }
+    ```
+    - neste código, quando a iteração estiver no 2, ele não irá printar "Bazinga!".
+    - vai continuar o loop normalmente após o índice 2.
 ---
 
 - Operadores
