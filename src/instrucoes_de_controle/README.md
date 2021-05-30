@@ -6,7 +6,7 @@
 ## Anotações
 
 O Java possuí três tipos de instruções de controle (instrução de sequência, instruções de seleção e instruções de
-repetição)
+repetição), com elas é possível formar um algoritmo.
 
 - **Instrução em sequência**
     - são os códigos que são executados linha em linha (uma em sequência outra).
@@ -155,6 +155,24 @@ para a outra iteração. (diferente do break que para os dois)
         - o incremento e pré-incremento qnd estão isolados fazem a msm coisa. Apenas haverá diferença
           quando estiverem numa expressão.
           
+---
+
+- Operadores lógicos
+
+| Nome | Operador | Descrição |
+| :----: | :----: | --- |
+| _E_    | `&&` | |
+| _OU_    | `\|\|` | |
+| _E_ lógico    | `&` | |
+| _OU_ lógico    | `\|` | |
+| _OU_ exclusivo lógico | `^` |  apenas dará `true` qnd houver (`true e false`)  na expressão, caso seja (`true e true`) dará `false`|
+| _NEGAÇÃO_ lógica | `!` | |
+
+- Operador `&&` tem maior precedência que o `||`.
+- Os `&&` e `||` realizam **Avaliação de curto-circuito**. Parando na primeira expressão.
+    - para o `&&`, para quando aparecer o primeiro `false` aparecer, e as outras expressões não serão vistas.
+    - para o `||`, para no primeiro `true`, e não verá as outras expressões.
+- Já os operadores lógicos, realizam a avaliação por completo independente de quem for a primeira expressão.
 ---
 
 - GUI para desenhar
