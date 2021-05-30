@@ -21,7 +21,6 @@ Os estudos foram feitos vendo a documentação e principalmente seguindo o livro
 ### REFERÊNCIAS
 
 - [open JDK](https://adoptopenjdk.net/index.html?variant=openjdk8&jvmVariant=hotspot) (versão openSource) ou [Java JDK](https://www.oracle.com/br/java/technologies/javase-downloads.html) (versão da Oracle)
-
+- [Documentação das versões do Java SE](https://docs.oracle.com/en/java/javase/index.html) (ao clicar nos links, procure por "API documentation")  
 - livro [Java como programar](https://www.amazon.com.br/Java%C2%AE-como-programar-Paul-Deitel/dp/8543004799)
-
 - Diretrizes para um código seguro [CERT](https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java)
