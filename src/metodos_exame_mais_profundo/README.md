@@ -67,6 +67,10 @@ Um exemplo dele é o método `pow` da classe Math. (_obs: todos os métodos da c
     representação em string do objeto).
   - esse método é chamado implicitamente qnd é tentado fazer uma concatenação.
   
+## Geração de números randomicos seguros
+- o util.Random gerava numeros "aleatorios" que poderiam ser previstos, com o security.SecureRandom o números ficam mais 
+  aleatórios.
+- 
 
 ## Referências
 - Pacotes (packages) nativos da: 
