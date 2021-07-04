@@ -56,6 +56,6 @@ Array é um grupo de variáveis (chamados elementos ou componentes)
     - executa os códigos no seu bloco quando o try captura alguma exceção.
     - variáveis declaradas no bloco `try` estão fora do escopo do bloco `catch`.
     - O erro quando passado para o System.out.println() ele implicitamente executa o toString presente na classe de erro.
-    
+  
     
     

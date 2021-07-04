@@ -40,7 +40,9 @@ repetição), com elas é possível formar um algoritmo.
 - **Instruções de repetição (iteração ou instrução de loop)**
     - `while` - (ver dir classAverage)
     - `do...while`
-    - `for` (existem for aprimorados)
+    - `for(tipo var; boolean; incrementador)`
+        - `for(tipo var : array)` 
+            - ele faz um loop de acordo com a quantidade de elementos que tiver no array.
 
 <br/>
 
