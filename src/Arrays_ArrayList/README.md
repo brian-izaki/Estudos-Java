@@ -38,4 +38,24 @@ Array é um grupo de variáveis (chamados elementos ou componentes)
 
 - na classe InitArray foi utilizado uma variável constante (utilizando o `final`), elas sempre devem ser definidas no início 
   e dps não podem ser alteradas após serem definidas, isso resulta em erro de compilação.
+  
+## Erros de compilação
+- `ArrayIndexOutOfBoundsException`: erro ao tentar acessar valores fora do intervalo de índices de um Array.
+
+## Exceções
+- Quando ocorre um erro de compilação o java lança uma exceção dizendo qual o erro que ocorreu.
+
+<blockquote>
+    Se a "regra" é uma instrução executando corretamente, então um problema representa a "exceção à regra".
+</blockquote>
+
+- instrução `try`:
+    - para realizar tratamento de erros, utilize o bloco try.
+    - nele pode colocar qualquer código que lance uma exceção, se caso houver uma, ele executa o bloco `catch`.
+- instrução `catch`:
+    - executa os códigos no seu bloco quando o try captura alguma exceção.
+    - variáveis declaradas no bloco `try` estão fora do escopo do bloco `catch`.
+    - O erro quando passado para o System.out.println() ele implicitamente executa o toString presente na classe de erro.
+    
+    
     
