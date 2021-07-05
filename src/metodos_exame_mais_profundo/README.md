@@ -70,7 +70,8 @@ Um exemplo dele é o método `pow` da classe Math. (_obs: todos os métodos da c
 ## Geração de números randomicos seguros
 - o util.Random gerava numeros "aleatorios" que poderiam ser previstos, com o security.SecureRandom o números ficam mais 
   aleatórios.
-- 
+- o método nextInt serve para pegar um inteiro aleatório dentro da quantidade passada como argumento. O valor dele inicia em 0 (zero).
+- O secureRandom acaba diminuindo performance se comparado ao util.Random;
 
 ## Referências
 - Pacotes (packages) nativos da: 
