@@ -15,6 +15,9 @@ Os estudos foram feitos vendo a documentação e principalmente seguindo o livro
 ## Anotações gerais
 - Static
     - são métodos que não tem necessidade de instanciar uma classe para poder utilizar ele. ex: `Math.pow(2, 3)`
+- final
+  - declara uma constante, ou seja, seu valor não poderá ser alterado depois que for inicializado. 
+  - Caso passe uma variável, no momento que ela receber um valor, esse valor será considerado a constante.
 
 ---
   
