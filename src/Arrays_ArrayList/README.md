@@ -77,3 +77,34 @@ Array é um grupo de variáveis (chamados elementos ou componentes)
 - **Cópia de valor (passagem por valor)**
     - é armazenado apenas o valor que está sendo passado como argumento.
     - resumindo, alteração feitas dentro do método **NÃO refletem** na variavel que foi passada como argumento.
+
+## Lista de argumentos
+
+- Permite criar métodos com quantidade indeterminada de argumentos.
+- ele é representado pelas reticências após a descrição do tipo. ex: `double...`, `String...`;
+- ele como parâmetro se torna uma array do tipo que é especificado.
+
+## Classe Arrays
+
+- **Auxilia na manipulação de arrays comuns**, fornecendo métodos `static`, ele vem do pacote `java.utils.Arrays`
+    - `.sort`: auxilia na ordenação dos elementos dentro do array.
+    - `.fill(array, valor)`: preenche a array com o valor atribuído a `valor`.
+    - `.equals(array, array)`: verifica se duas arrays passadas são iguais, tanto em valores como em ordem.
+    - `.binarySearch(array, valor)`: realiza busca binaria, caso encontre retorna a posição dele, caso não, irá retornar
+      um valor abaixo de zero
+
+- `System.arraycopy()` realiza a cópia de uma array.
+
+## intro a coleções e classe ArrayList
+
+- coleções: estruturas de dados já predefinidas para armazenar grupos de objetos relacionados na memória.
+- A classe ArrayList<T>
+    - pode alterar dinamicamente seu tamanho para adicionar mais elementos.
+    - o T por convenção significa **"espaço reservado"** podendo ser trocado por qualquer tipo.
+    - Classes com espaço reservado são conhecidos como **classes genéricas**.
+    - _somente tipos NÃO primitivos podem ser usados_ nos espaços reservados.
+    - métodos:
+        - `.add`: adiciona na última posição da lista.
+        - `.remove(valor)`: remove o que for especificado em `valor` ele pode ser um índice ou o valor em si.
+        - `.contains(valor)`: retorna true se encontrar na lista o que foi passado em `valor`.
+    
