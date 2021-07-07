@@ -39,12 +39,41 @@
 - Como classes, eles são tipos por referência.
 - Declara-se um com `enum`, e uma lista separada por vírgula de constantes enum. ela pode conter componentes de classes
   como métodos, campos e construtores.
-  - Cada declaração são: **implicitamente final e static**.
-  - elas podem ser utilizadas em qualquer lugar que pudesse utilizar uma constante.
-  - As constantes devem ser declaradas sempre no início, o construtor, métodos e variáveis sempre devem ser declaradas 
-    depois.
+    - Cada declaração são: **implicitamente final e static**.
+    - elas podem ser utilizadas em qualquer lugar que pudesse utilizar uma constante.
+    - As constantes devem ser declaradas sempre no início, o construtor, métodos e variáveis sempre devem ser declaradas
+      depois.
 - cada constante em um Enum é, na verdade, um objeto dele mesmo que tem sua própria cópia das variáveis de instância.
 - O compilador gera métodos static para um tipo Enum:
-  - `.values`: **retorna uma array** com as constantes do Enum de acordo com a ordem que foi especificado nela.
-  
+    - `.values`: **retorna uma array** com as constantes do Enum de acordo com a ordem que foi especificado nela.
 
+## Membros da classe static
+
+- um objeto possui uma cópia das variáveis de instância, na qual cada uma pode ter valores diferentes. Porém, uma
+  variável/método com static possuirá seu valor igual independente do objeto. Elas tbm são conhecidas como variável de
+  classe.
+- uma variável static pode ser vista por todos os objetos da classe.
+- static existe mesmo quando não há um objeto instanciado.
+- exemplo: `Math.random()`
+- métodos static não podem acessar variáveis e métodos de instâncias da própria classe.
+- Tem como realizar a importação de métodos/variáveis static sem precisa usar a classe e ".". Possui duas maneiras:
+    - simples: `import static nomeDoPacote.NomeDaClasse.nomeDoMembroStatic`. Assim será trazido apenas um elemento e
+      depois basta usar o nome.
+    - Todos de uma vez: `import static nomeDoPacote.NomeDaClasse.*`. Assim poderá usar todos os static da classe.
+
+## variáveis final
+
+- declara uma constante que não poderá ser modificada.
+- ela pode ser:
+    - **declarada diretamente**: é recomendado declarar com `static`, pois objetos diferentes utilizarão os mesmos
+      valores. <br> ex: `private static final int valorFixo = 10;`
+    - **declarada no construtor**: possibilita que objetos diferentes possuam constantes diferentes. <br>
+      ex: `private final int valorDependeObjeto;`
+    - caso não seja declarada nas duas situações acima, ocorre erro de compilação. <br>
+      ex: `java: cannot assign a value to final variable`
+
+## Acesso de pacote
+
+- é quando um método ou variável **não possui os modificadores de acesso**(private, public ou protected) e estão no
+  mesmo pacote.
+- as classes podem se comunicar pegando ou alterando os valores entre elas através de referências da classe.
