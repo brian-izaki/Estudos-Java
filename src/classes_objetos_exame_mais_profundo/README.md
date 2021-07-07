@@ -77,3 +77,25 @@
 - é quando um método ou variável **não possui os modificadores de acesso**(private, public ou protected) e estão no
   mesmo pacote.
 - as classes podem se comunicar pegando ou alterando os valores entre elas através de referências da classe.
+
+## BigDecimal
+
+- Aplicações que precisem de maior precisão com relação a valores double deve utilizar a classe `BigDecimal` do pacote
+  java.Math, como valores financeiros, cálculos da distância, etc.
+- utilizando o pacote de `java.text.NumberFormat`, é possível converter os dados de acordo a região (EUA, BRL, etc), ele
+  também faz o arrendondamento de decimal;
+- para realizar cálculos básicos com instancias dessa classe é necessário utilizar os métodos que ele fornece:
+    - `BigDecimal.valueOf(valorDouble)`: instancia um BigDecimal a partir de um double.
+    - `valorBigDecimal.multiply(outroValorBigInt)`: multiplicação.
+    - `valorBigDecimal.add(outroValorBigInt)`: adição.
+    - `valorBigDecimal.pow(outroValorBigInt)`: elevado a ...
+    - `valorBigDecimal.setScale(2, RoundingMode.HALF_EVEN)`: seta a quantidade de arredondamento, o `2` representa a
+      quantidade de casas à direita o BigDecimal pode ter, o segundo argumento diz que está utilizando arredondamento
+      contábil.
+- a classe tbm fornece constantes que podem ser utilizadas, como `BigDecimal.ONE`, `BigDecimal.ZERO` e `BigDecimal.TEN`.
+- como a classe **não realiza arredondamento por padrão**, quando houver casos que uma operação resulte em valores
+  aritméticos o Java lança a Exception: `ArithmeticException`.
+- é possível **configurar o arredondamento** do BigDecimal no momento de instanciar ela, com o `MathContext` (pacote
+  java.math)
+
+    
