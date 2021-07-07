@@ -2,7 +2,7 @@
 
 - Uma classe quando não é declarada um construtor, o compilador declara um padrão, ou seja, variáveis que são declaradas
   também rebem valores padrões.
-- o 0 a esquerda nas flags do format são para preencher os espaços vazios que não foram preenchidos pela quantidade
+- o 0 à esquerda nas flags do format são para preencher os espaços vazios que não foram preenchidos pela quantidade
   especificada no campo, `%04 == 0001, 0002, 0012`
 
 ## Métodos sobrecarregados
@@ -33,3 +33,18 @@
 - Caso o desenvolvedor não a crie, o compilador gera um vazio, na qual inicializa os valores de acordo com o que for
   atribuído nas variáveis, caso não tenha nada será preenchido com false para booleans, 0 para tipos numéricos
   primitivos e null para referências.
+
+## Tipos Enum
+
+- Como classes, eles são tipos por referência.
+- Declara-se um com `enum`, e uma lista separada por vírgula de constantes enum. ela pode conter componentes de classes
+  como métodos, campos e construtores.
+  - Cada declaração são: **implicitamente final e static**.
+  - elas podem ser utilizadas em qualquer lugar que pudesse utilizar uma constante.
+  - As constantes devem ser declaradas sempre no início, o construtor, métodos e variáveis sempre devem ser declaradas 
+    depois.
+- cada constante em um Enum é, na verdade, um objeto dele mesmo que tem sua própria cópia das variáveis de instância.
+- O compilador gera métodos static para um tipo Enum:
+  - `.values`: **retorna uma array** com as constantes do Enum de acordo com a ordem que foi especificado nela.
+  
+
