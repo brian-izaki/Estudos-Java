@@ -3,7 +3,7 @@ package ooHeranca.comissionEmployee;
 public class BasePlusComissionEmployee extends ComissionEmployee{
     private double baseSalary;
 
-    BasePlusComissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSale,
+    public BasePlusComissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSale,
                               double comissionRate, double baseSalary) {
         // NÃO está sendo herdado, mas sim, invocando explicitamente
         super(firstName, lastName, socialSecurityNumber, grossSale, comissionRate);

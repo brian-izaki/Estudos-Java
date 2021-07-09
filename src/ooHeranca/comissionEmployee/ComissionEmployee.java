@@ -9,7 +9,7 @@ public class ComissionEmployee {
     private double grossSale;
     private double comissionRate;
 
-    ComissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSale, double comissionRate) {
+    public ComissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSale, double comissionRate) {
         if (grossSale < 0.0)
             throw new IllegalArgumentException("Venda bruta deve ser maior ou igual a 0.0");
 
